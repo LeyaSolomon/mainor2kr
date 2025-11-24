@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEO_FLOW</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+<div class="logo">
+    <h1>LEO_FLOW</h1>
+    <h2>цветочный магазин</h2>
+</div>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html" class="main">главная</a></li>
+            <li><a href="shop.html" class="shop">магазин</a></li>
+            <li><a href="./form.html" class="form1">форма</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <div class="order-wrap" aria-label="Форма заказа">
+    <div class="order-title">Оформление Заказа</div>
+
+    <form class="order-form" action="https://example.com/checkout" method="post" target="_blank">
+      <input class="form-field" type="text" name="recipient" placeholder="Имя получателя" required>
+
+      <input class="form-field" type="text" name="sender" placeholder="Имя отправителя (необязательно)">
+
+      <input class="form-field" type="email" name="email" placeholder="Email" required>
+
+      <input class="form-field" type="tel" name="phone" placeholder="Номер телефона" required>
+
+      <input class="form-field" type="text" name="delivery_address" placeholder="Адрес доставки" required>
+
+      <input class="form-field" type="text" name="city" placeholder="Город доставки" required>
+
+      <input class="form-field" type="text" name="address_detail" placeholder="Квартира, подъезд, этаж" required>
+
+      <input class="form-field" type="text" name="delivery_time" placeholder="Время доставки" required>
+
+      <input class="form-field" type="text" name="promo" placeholder="Промокод (необязательно)">
+
+      <div class="options-row" aria-label="Дополнительные параметры">
+        <label class="option-item">
+          <input class="checkbox" type="checkbox" name="card_note" />
+          Добавить открытку
+        </label>
+
+        <label class="option-item" style="justify-content:flex-end;">
+          <span>Доставка курьером</span>
+          <input class="radio" type="radio" name="delivery_method" value="courier" checked />
+        </label>
+      </div>
+
+      <div class="options-row" aria-label="Другая опция">
+        <label class="option-item">
+          <input class="checkbox" type="checkbox" name="recipient_notify" />
+          Уведомить получателя
+        </label>
+
+        <label class="option-item" style="justify-content:flex-end;">
+          <span>Самовывоз</span>
+          <input class="radio" type="radio" name="delivery_method" value="pickup" />
+        </label>
+      </div>
+
+      <button class="submit-btn">Готово</button>
+    </form>
+  </div>
+
+
+</body>
+</html>
